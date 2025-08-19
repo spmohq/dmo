@@ -24,7 +24,7 @@
   Read in your language
 </button>
 
-<!--- Preview Start ---!>
+<!-- Preview Start -->
 
 
 
@@ -284,9 +284,8 @@
 </p>
 
 
+<!-- Preview End -->
 
-
-<!--- Preview Start ---!>
 <!-- 3. Scripts -->
 <script>
   function copyPrompt(id) {
@@ -306,7 +305,8 @@
 
     const gtScript = document.createElement('script');
     gtScript.type = 'text/javascript';
-    gtScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    // *** CORRECTION MADE HERE: Changed from '//' to 'https://' ***
+    gtScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
     document.body.appendChild(gtScript);
 
     window.googleTranslateElementInit = function () {
@@ -324,5 +324,4 @@
   }
 </script>
 </body>
-
 </html>
