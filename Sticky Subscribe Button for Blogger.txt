@@ -1,0 +1,30 @@
+Sticky Subscribe Button for Blogger
+
+
+Just before: </b:if>
+
+<!-- Sticky Subscribe Button -->
+<div id='stickySubBtnContainer' style='position:fixed; top:50%; right:20px; transform:translateY(-50%); z-index:9999;'>
+  
+  <!-- Close Button (X) - positioned relative to the container -->
+  <div id='closeStickyBtn' style='position:absolute; top:-12px; right:-12px; width:30px; height:30px; background:black; color:white; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:bold; cursor:pointer; box-shadow:0 2px 5px rgba(0,0,0,0.4); border: 2px solid white; z-index:10000;'>
+    X
+  </div>
+  
+  <!-- Main Clickable Image -->
+  <a href='https://spm.graphy.com/membership' style='text-decoration:none;' target='_blank'>
+    <img alt='Join StudySkills Members Zone Now!' src='https://studyskills.co.in/mem1.png' style='width:250px; height:250px; border:0; box-shadow:0 4px 10px rgba(0,0,0,0.2); display:block; border-radius:15px;'/>
+  </a>
+
+</div>
+
+after: </b:if>
+
+<!-- JavaScript to make the close button work -->
+<script>
+  // When the close button is clicked...
+  document.getElementById(&#39;closeStickyBtn&#39;).addEventListener(&#39;click&#39;, function() {
+    // ...hide the entire container.
+    document.getElementById(&#39;stickySubBtnContainer&#39;).style.display = &#39;none&#39;;
+  });
+</script>
